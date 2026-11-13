@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist-ssr
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Logs & temporary debug scripts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dump_*.cjs
+test_*.cjs
+analyze_*.cjs
+debug_parser.cjs
+page1_*.png
+scratch/
+
+# Exported desktop bundles (kept local)
+exported-application/
+ParikshaBank-Desktop-Application.zip
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

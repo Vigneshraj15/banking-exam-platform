@@ -1,0 +1,26 @@
+{
+  "id": "com.parikshabank.app",
+  "name": "ParikshaBank - Indian Banking Examination Platform",
+  "short_name": "ParikshaBank",
+  "description": "Comprehensive Examination Platform for SBI, IBPS, RBI & RRB Competitive Exams",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FAF9F6",
+  "theme_color": "#262626",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

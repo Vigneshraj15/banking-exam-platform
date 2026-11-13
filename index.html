@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#262626" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ParikshaBank" />
+    <meta name="application-name" content="ParikshaBank" />
+    <meta name="msapplication-TileColor" content="#262626" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARIKSHA | Modern Editorial Banking & Competitive Examination Platform</title>
+    <!-- Modern Editorial Fonts: Fraunces (Headings) & Plus Jakarta Sans (Body & UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- KaTeX CSS for mathematical equations in Quant and DI -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <!-- PDF.js for native client-side PDF text and structure extraction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+      if (window['pdfjs-dist/build/pdf'] || window.pdfjsLib) {
+        var lib = window['pdfjs-dist/build/pdf'] || window.pdfjsLib;
+        lib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(console.warn);
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-slate-800 antialiased select-none font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
